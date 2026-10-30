@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Administrativo - DuoMatch</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .admin-container {
+            max-width: 800px;
+            width: 100%;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .stat-box {
+            background-color: #0d1117;
+            border: 1px solid var(--border-color);
+            padding: 16px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .stat-box h3 {
+            font-size: 1.8rem;
+            color: var(--accent-color);
+            margin-bottom: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 0.9rem;
+        }
+        th {
+            color: var(--text-white);
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container admin-container">
+        <header>
+            <h1>⚙️ Painel do Administrador</h1>
+            <p>Controle geral de usuários, anúncios e parceiros</p>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-box">
+                <h3 id="total-users">0</h3>
+                <p>Usuários Ativos</p>
+            </div>
+            <div class="stat-box">
+                <h3>R$ 0,00</h3>
+                <p>Faturamento (Mês)</p>
+            </div>
+        </div>
+
+        <section class="card">
+            <h2>Gerenciar Usuários Online</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nick</th>
+                        <th>Jogo</th>
+                        <th>Elo</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="admin-user-list">
+                    <tr>
+                        <td colspan="4" style="text-align: center; color: #8b949e;">Nenhum usuário logado no momento.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
