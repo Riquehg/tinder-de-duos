@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match de Duos - Encontre seu Duo Perfeito</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>🎮 DuoMatch</h1>
+            <p>Encontre parceiros sérios para subir de elo</p>
+        </header>
+
+        <main id="main-content">
+            <!-- Tela de Login / Cadastro Rápido -->
+            <section id="auth-section" class="card">
+                <h2>Entrar na Fila</h2>
+                <input type="text" id="gamer-tag" placeholder="Seu Nick + Tag (Ex: Player#123)">
+                <select id="game-select">
+                    <option value="Valorant">Valorant</option>
+                    <option value="CS2">CS2</option>
+                    <option value="League of Legends">League of Legends</option>
+                    <option value="Apex Legends">Apex Legends</option>
+                </select>
+                <select id="rank-select">
+                    <option value="Ferro/Prata">Ferro / Prata</option>
+                    <option value="Ouro/Platina">Ouro / Platina</option>
+                    <option value="Diamante+">Diamante para cima</option>
+                </select>
+                <button id="btn-entrar" class="btn-primary">Entrar no Lobby</button>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
